@@ -1,0 +1,413 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	font-family: Arial,Helvetica,sans-serif;
+}
+/*black nav*/
+#nav-top{
+	font-size: 0.6em;
+	margin: 0;
+	color: #fff;
+	background-color: black;
+	position: relative;
+	min-width: 110em;
+	width: 100%;
+}
+#nav-top ul{
+	margin: 0;
+	display: inline;
+
+}
+#nav-top ul li{
+	display: inline;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	line-height: 4em;
+
+}
+#nav-left{
+	position:relative;
+	left:0;
+	margin-left: 3em;
+}
+#nav-right{
+	float:right;
+	right:0;
+	padding-right: 7em;
+}
+#nav-right img{
+	vertical-align: middle;
+}
+
+/*header*/
+#header{
+	min-width: 70em;
+	margin-top: 2em;
+	padding-left: 5em;
+	padding-right:5em;
+	position: relative;
+}
+.Grids{
+	display: block;
+
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.Grid{
+	width: 33.3333%;
+	display: inline-block;
+	font-size: 1em;
+    vertical-align: middle;
+}
+.Grid-center{
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+
+#search-form{
+	position: relative;
+	display: inline-block;
+}
+
+#search{
+	margin: 0;
+	width: 15em;
+	height: 30px;
+	border:#ccc solid 1px;
+	border-right: black solid 1px;
+
+}
+#header button{
+	margin: 0;
+	margin-left: -2px;/*让button的边框和input的边框重合*/
+	padding: 0;
+	width: 35px;
+	height:34px ;
+	
+	background-color: black;
+	position:absolute;
+	background-size: 101% 101%;
+	background-image: url(images/search.png);
+	border: 0px;
+}
+#tabs{
+	
+	text-align: center;
+	padding: 0;
+	width: 100%;
+
+}
+#tabs ul{
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+	width: 100%;
+
+
+
+}
+#tabs ul li{
+	font-size: 0.75em;
+	font-weight: bold;
+	display: table-cell;
+	padding: 1em;
+	line-height: 2em;
+	text-align: center;
+	border: solid 0.5px transparent;
+	border-bottom:solid 0.5px #ccc;
+	border-radius: 0;
+	margin-bottom: 1em;
+
+}
+
+/*hidden tab*/
+#tabs li.active{
+	color:red;
+	border: solid 0.5px #ccc;
+	border-bottom: none;
+	box-shadow: -5px 0px 11px 2px #CCC;
+
+}
+#tab-makeup , #skin-care ,#fragrance {
+	box-shadow: -5px 5px 11px 2px #CCC;/*div的阴影效果*/
+
+}
+
+#tab-makeup ul, #skin-care ul,#fragrance ul{
+	display: inline-block;
+	padding: 0;
+}
+#tab-makeup ul li, #skin-care ul li,#fragrance ul li{
+	list-style-type:none;
+	padding: 1em;
+	display: inline-block;
+}
+
+
+#con div {
+	display: none;
+	padding: 1em;
+	
+}
+#con div.active{
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	z-index: 1000;
+	margin:0;
+	border:solid 0.5px #ccc;
+	border-top:0;
+
+}
+
+hr{
+	color: #ccc;
+	border-width: 0.5px;
+}
+
+/*main*/
+#container{
+	margin-left:5em;
+	margin-right: 5em;
+	min-width: 70em;
+}
+#firstscreen{
+	
+}
+#sidebar{
+	margin: 0;
+	width: 20%;
+	text-align: center;
+	display: inline-block;
+}
+#sidebar p{
+	text-decoration:underline;
+}
+#imgbar{
+	display: inline-block;
+	margin: 0;
+	width: 78%;
+	position: relative;
+	top:0;
+	overflow:hidden;
+}
+#imgbar ul{
+	margin: 0;
+	padding: 0;
+	
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 200%;
+}
+#imgbar ul li{
+	display: inline;
+	float: left;
+	width: 50%;
+}
+#imgbar ul li img{
+	
+	width: 100%;
+}
+#pre{
+	width: 3em;
+	height: 10em;
+	position: absolute;
+	top:30%;
+	left: 0;
+
+	background-color: rgb(222, 222, 222); 
+	filter:alpha(opacity=20); /*ie透明度20%*/ 
+    -moz-opacity:0.8;        /*Moz + FF 透明度20%*/ 
+    opacity:0.8; 
+    z-index: 100;  
+    background-image: url(images/pre.png);
+    background-size: 50% 50%;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;/*定义背景图片的位置居中*/
+}
+#next{
+	width: 3em;
+	height: 10em;
+	position: absolute;
+	top:30%;
+	right: 0;
+	background-color: rgb(222, 222, 222); 
+	filter:alpha(opacity=20); /*ie透明度20%*/ 
+    -moz-opacity:0.8;        /*Moz + FF 透明度20%*/ 
+    opacity:0.8; 
+    z-index: 100;
+    background-image: url(images/next.png);
+    background-size: 50% 50%;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;  
+}
+
+
+/*list*/
+.list{
+	margin-top:2em;
+	width: 100%;
+	overflow: hidden;
+}
+.list-text{
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.list-img{
+	position: relative;
+}
+.list-img ul{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 140em;
+}
+
+.list-img ul li{
+	padding: 3em;
+	width:15.5em ;
+	display: inline-block;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.pre{
+	width: 1.5em;
+	height: 2.8em;
+	position: absolute;
+	top:4em;
+	left: 0;
+	background-image: url(images/pre.png);
+	background-size: contain;
+	/*background-color: rgb(200, 200, 200); */
+	filter:alpha(opacity=20); /*ie透明度20%*/ 
+    -moz-opacity:0.8;        /*Moz + FF 透明度20%*/ 
+    opacity:0.8; 
+    z-index: 100; 
+}
+.next{
+	width: 1.5em;
+	height: 2.8em;
+	position: absolute;
+	top:4em;
+	right: 0;
+	background-image: url(images/next.png);
+	background-size: contain;
+	/*background-color: rgb(200, 200, 200); */
+	filter:alpha(opacity=20); /*ie透明度20%*/ 
+    -moz-opacity:0.8;        /*Moz + FF 透明度20%*/ 
+    opacity:0.8; 
+    z-index: 100;
+}
+.img-6 ul li{
+	padding: 1.5em;
+	width:17em ;
+	display: inline-block;
+	text-align: center;
+	font-size: 0.5em;
+}
+
+.blocks{
+	padding: 0;
+}
+
+.img-block{
+	margin: 1.1em;
+	display: inline-block;/*这里要用inline-block才能让宽度起作用*/
+	width: 20%;
+
+}
+.img-block img{
+	width: 100%;
+
+}
+/*footer begin*/
+#footer-search{
+	position: relative;
+	width: 100%;
+	height: 2em;
+	margin-top: 3em;
+}
+.search-form{
+	position: relative;
+	display: inline-block;
+}
+.footer-input{
+	margin: 0;
+	width: 15em;
+	height: 30px;
+	border:#ccc solid 1px;
+	border-right: black solid 1px;
+}
+.search-form button{
+	margin: 0;
+	margin-left: -1px;/*让button的边框和input的边框重合*/
+	padding: 0;
+	width: 35px;
+	height:34px ;
+	border: 1px;
+	background-color: black;
+	position:absolute;
+	right:0;
+}
+.left{
+	display: inline-block;
+	float: left;
+}
+.right{
+	display: inline-block;
+	float: right;
+	
+}
+#footer-bottom{
+	margin-top: 5px;
+}
+#div-hr{
+	width: 100%;
+	height: 0.5em;
+	background-color: black;
+}
+.footer-list{
+	width: 24%;
+	display: inline-block;
+	
+}
+.footer-list ul{
+	border-left: 1px solid #ccc;
+}
+.footer-list ul li{
+	list-style-type: none;
+	line-height: 1.8em;
+}
+.footer-list a{
+	
+	color: black;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+#icons{
+	font-size: 0.8em;
+
+}
+#icons a{
+	color: black;
+	text-decoration: none;
+}
+
+#icons div{
+	display: inline;
+}
+#hidden{ /*隐藏span*/
+	display: none;
+}

@@ -1,0 +1,132 @@
+body{ 
+	margin:0;
+	font-family: "apple Chancery","sans serif", Arial;
+	background:#ffffff;
+	text-decoration: none;
+}
+
+#nav{
+	
+	float:right;
+	height:35px;
+	width: 100%;
+	position: fixed;
+	background-color:rgba(0, 0, 0,0.2); 
+	z-index: 1000;
+
+	
+}
+
+/* Please adjust the size of the navigation bar for your page by changing
+1. ID name for this section (#navUL to for example #AdminPagenavUL) for your specific page
+2. Width of the navigation bar*/
+#navUL{
+	width:800px; /* width of the whole navigation bar*/
+	margin:0 auto;
+	float: right;
+	
+	}
+/* Please adjust the size of the tabs for your page by changing
+1. ID name for this section (#navulli) and for other sections that use
+the same id, such as #navulli a.
+2. Width of the tabs in the navigation bar*/
+#navulli {
+	
+	float: right;
+	text-align:center;
+	list-style-type:none; /*clear the format of the list 去掉li前面的点*/
+	width:150px; /* width of the individual tab*/
+	line-height:35px;/*用line-height使li中的元素竖直居中*/
+	font-size:18px;
+	
+	
+}
+#navulli a{
+	color:#555555;
+	display:block;
+	text-decoration: none;
+}
+#navulli a:hover{
+	background:	#F5F5F5;	
+}
+
+#left{
+	float: left;
+	width:50%;
+	height:100%;
+	background-image: url(image/sun.jpeg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size: contain;/*背景图刚好平铺div*/
+	overflow-y:auto;
+	position: fixed;
+
+	
+}
+.transTitle{
+	
+	background-color:rgba(15, 15, 15,0.3); /*只设置背景的透明度，子div就不会继承透明度，实现父div透明而内容不透明*/
+	
+	width:100%;
+	height:30%;
+
+	position:absolute;
+	bottom:0;
+	z-index: 1000;
+	padding-left: 10%;
+}
+.titleP{
+	font-size: 3em;
+	width: 80%;
+	color: white;
+	font-family: times;
+	border-bottom: 1px solid white;
+	margin-bottom: 0;
+}
+.introP{
+	font-size: 1em;
+	color: #CCCCCC;
+}
+.introP em{
+	color: white;
+	font-size: 1.1em;
+}
+.transTitle hr{
+	color: white;
+	width: 50%;
+}
+
+#text{
+	float: right;
+	width: 50%;
+	height: 100%;
+	margin:0;
+	position: relative;
+	padding-top:10%;
+	text-align: center;
+}
+.circle{
+	width: 220;
+	height: 45;
+	
+
+
+}
+#text hr{
+	width: 30%;
+	text-align: center;
+
+}
+.article{
+	padding:5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.article p{
+	font-family: "Arial";
+	font-size: 1em;
+	color: #6D6161;
+	line-height: 2;
+	text-align: left;
+}

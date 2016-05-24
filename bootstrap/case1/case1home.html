@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Case1</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css"> 
+	  <link rel="stylesheet" type="text/css" href="case1home.css"> 
+	  <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	  <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--两个div构成nav，第二个div里有ul，放着所有的tab，和登陆图标-->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">BootStrap Frame</a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>     
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+	      <ul class="nav navbar-nav">
+	         <li><a href="#">Home</a></li>
+
+	         <li class="dropdown">
+	         	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Content</a>
+	         	<ul class="dropdown-menu">
+	         		<li><a href="#">Content1</a> </li>
+	         		<li><a href="#">Content2</a> </li>
+	         		
+	         	</ul>
+	         </li>
+	         <li><a href="#">About</a></li>
+	         
+	      </ul>
+	      <!--navbar-right让导航栏中元素靠右-->
+	      <ul class="nav navbar-right navbar-nav">
+	      	<li>
+	   			<a href="#" class="glyphicon glyphicon-search"></a>
+	   		</li>
+	   		<li>
+	   			<a href="#" class="	glyphicon glyphicon-user"></a>
+	   		</li>
+	      	
+	      </ul>
+	   	</div>
+	</nav><!--nav end-->
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Case1 Template</h1>
+				</div>
+				<div class="col-md-6">
+				<!--class="well"给div加个灰色边框-->
+					<div class="well pull-right">
+						<img width="280" height="100" src="../images/pizza.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header><!--header end-->
+
+	<!--begin body-->
+	<div class="container">
+		<div class="no-gutter row"><!--no-gutter指没有列与列的间距-->
+		<!--Sidebar begining-->
+		<div class="col-md-2 col-sm-2 hidden-xs ">
+		<div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #bad2d8;">SideBar</div>
+			<div class="panel-body">
+				<ul class="nav">
+				<li><a href="">link1</a></li>
+				<li><a href="">link2</a></li>
+				<li><a href="">link3</a></li>
+				<li><a href="">link4</a></li>
+			</ul>
+			<!--手风琴效果-->
+				<div id="accordion">
+				<div data-toggle="collapse" data-parent="#accordion" href="#accordion1" class="">Accordion1</div>
+					<div id="accordion1">accordion1</div>
+				<div data-toggle="collapse" data-parent="#accordion" href="#accordion2" class="">Accordion2</div>
+					<div id="accordion2">accordion2</div>	
+				</div><!--"accordion" end-->
+				<div class="col col-span-12">
+					<span class="icon-2x glyphicon glyphicon-flash"></span>
+					<span class="icon-2x glyphicon glyphicon-flash"></span>
+					<span class="icon-2x glyphicon glyphicon-flash"></span>
+					<span class="icon-2x glyphicon glyphicon-flash"></span>
+				</div>
+				
+			</div><!--"panel-body" end-->
+			
+		</div><!--"panel panel-default" end-->
+		</div><!--"col-md-2" Sidebar end-->
+		<!---middle bar begining-->
+		<div class="col-md-3  hidden-sm hidden-xs">
+		<div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #76b6c6;">New Story</div>
+			<div class="panel-body" >
+				<img class="img-responsive" src="images/300.png">
+				<div class="well"><!--Well 是一种会引起内容凹陷显示或插图效果的容器 <div>-->
+					<img class="img-responsive" src="images/phone.png">
+					<h3>Bootstrap 3 is here</h3>
+					<p>In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen</p>
+				</div>
+				<hr>
+				<h3>Top members</h3>
+				<h5><span class="glyphicon glyphicon-user"></span> John Chapman</h5>
+				<h5><span class="glyphicon glyphicon-user"></span> Mandy Zhang</h5>
+				<h5><span class="glyphicon glyphicon-user"></span> Alex Quan</h5>
+				<h5><span class="glyphicon glyphicon-user"></span> Olivia Quan</h5>
+
+				
+			</div><!--panel-body end-->
+			
+		</div><!---"panel panel-default" end-->
+			
+		</div><!---middle bar end-->
+		<!--right content beginning-->
+		<div class="col-md-7 col-sm-10 col-xs-12">
+		<div class="panel panel-default">
+		<div class="panel-heading" style="background-color: #419db4;">Top stories</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-8">
+					<h2>The Year of Responsive Design.</h2>
+					<p>2013 was marked as the year of Responsive Web Design (RWD). The Web is filled with big brands, galleries and magical examples that media queries demonstrate the glory of responsive design. </p>
+					<div class="btn btn-default">More</div>
+				</div><!--col-md-8 end-->
+				<div class="col-md-4">
+					<a href="#"><img class="img-responsive" src="images/300120.png"></a>
+					<p class="text-muted">This is the first 300*120 picture with text-muted class.</p>
+					<p>This is the first 300*120 picture.</p>
+					<hr>
+					<a href="#"><img class="img-responsive" src="images/300120.png"></a>
+					<p class="text-muted">This is the Second 300*120 picture with text-muted class.</p>
+					<p>This is the Second 300*120 picture.</p>
+				</div><!--col-md-4  end-->
+				
+				<div class="col-md-12">
+				<hr>
+					<p>"Mobile first" and "unobtrusive JavaScript" (AKA: "progressive enhancement") are strategies for when a new site design is being considered. These are related concepts that predated RWD: browsers of basic mobile phones do not understand JavaScript or media queries, so the recommended practice is to create a basic web site then enhance it for smart phones and PCs—rather than try "graceful degradation" to make a complex, image-heavy site work on the most basic mobile phones.</p>
+				<hr>
+					<div class="well text-center">
+						<h2>Centered text</h2>
+						<p class="text-muted">This is texted muted class.</p>
+						<span class="glyphicon glyphicon-music" style="font-size: 60px;"></span>
+						<span class="glyphicon glyphicon-time" style="font-size: 60px;"></span>
+						<span class="glyphicon glyphicon-qrcode" style="font-size: 60px;"></span>
+					</div><!--well end-->
+					<div>
+					<hr>
+						<h2>CSS</h2>
+						<p>To understand the RWD approach, you must first understand CSS - the basis of responsive design. CSS enables the developer to use percentage-based (AKA fluid or proportion-based) grids, CSS3 media queries. The web site then adapts to multiple devices (desktop, laptop, tablet, smartphone) and display conditions such as browser size and screen resolution.</p>
+						<div class="btn btn-default">
+							<span class="glyphicon glyphicon-cloud-download"></span> Download
+						</div>
+					</div>
+				</div><!--col-md-12 end-->
+				
+			</div><!--row end-->
+		</div><!--panel-body end-->
+			
+		</div><!--panel end-->
+			
+		</div><!--right content end-->
+			
+		</div><!--no-gutter row end-->
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h5>This is footer.</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
