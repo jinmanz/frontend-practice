@@ -60,17 +60,16 @@
 	/*** main begin ***/
 	#container{
 		margin: 0;
+		
 		display: flex;/*让所有灵活的项目都带有相同的长度，忽略它们的内容*/
 		flex-grow: 1;
-		align-items: stretch;
-		height: 100%;
-		background-color: #ccc;
+	
 	}
 	main{
-		padding:3%;
 		
+		padding: 2%;
 		flex-grow: 1;
-		background-color: yellow;
+		
 	}
 	main div{
 		width: 90%;
@@ -106,12 +105,10 @@
 	}
 	/*aside begin*/
 	aside{
-		width: 100px;
-		
+		width: 300px
 		background-color: #eee;
 		padding: 1%;
-		height: 100%;
-		flex-grow: 1;
+		flex-shrink: 0;
 	}
 	aside div{
 		padding: 12%;
