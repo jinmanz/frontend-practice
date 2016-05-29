@@ -1,0 +1,170 @@
+@media all{
+
+	body{
+		font-family: Arial;
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		display: flex; /*让nav main footer等竖直排成一列*/
+		flex-direction: column;
+		margin:0;
+
+	}
+
+	header{
+		width: 100%;
+		padding-top: 5%;
+		color:#fff;
+		background-color: #333;
+		margin: 0;
+	}
+	header h1{
+		font-size: 2em;
+		margin-left: 5%;
+	}
+	header h6{ /*sub-title*/
+		font-family: italic;
+		font-weight: normal;
+		color: #ccc;
+		font-size: .8em;
+		margin-left: 5%;
+
+	}
+
+	nav{
+		margin: 0 5%;
+		padding: 0;
+		font-weight: bold;
+	}
+	nav a{
+		text-decoration: none;
+		color: #fff;
+	}
+	nav ul{
+		margin: 0;
+		padding: 0;
+		background-color: #368abf;
+	}
+	nav ul li{
+		display: inline-block;
+		list-style: none;
+		margin-bottom: 1px;
+		padding: 2%;
+		text-align: center;
+		line-height: 1em;
+		border-right:solid 1px #3282b3;
+		border-left:solid 1px #4095c9; 
+	}
+
+	/*** main begin ***/
+	#container{
+		margin: 0;
+		display: flex;/*让所有灵活的项目都带有相同的长度，忽略它们的内容*/
+		flex-grow: 1;
+		align-items: stretch;
+		height: 100%;
+		background-color: #ccc;
+	}
+	main{
+		padding:3%;
+		
+		flex-grow: 1;
+		background-color: yellow;
+	}
+	main div{
+		width: 90%;
+		padding: 2%;
+		column-count: 2;
+		
+	}
+	main div section{
+		margin:0;
+		margin-bottom: 5%;
+		width: 100%;
+		padding: 1%;
+		text-align: left;
+	}
+	main img{
+		width: 100%;
+	}
+	main h1{
+		font-family: "times";
+		font-size:2em;
+		font-weight:bold;
+		margin:0;
+	}
+	main h6{
+		font-size: 0.8em;
+		color:#0f84cc;
+		margin:0;
+	}
+	main p{
+		font-size: 0.8em;
+		color:#aaa;
+		margin:0;
+	}
+	/*aside begin*/
+	aside{
+		width: 100px;
+		
+		background-color: #eee;
+		padding: 1%;
+		height: 100%;
+		flex-grow: 1;
+	}
+	aside div{
+		padding: 12%;
+	}
+	aside div p{
+		border-bottom: solid 3px #0f84cc;
+		display: inline-block;
+	}
+
+	aside div form{
+		display: inline-block;
+	}
+	#search{
+	margin: 0;
+	width: 15em;
+	height: 30px;
+	border:#ccc solid 1px;
+	border-right: black solid 1px;
+	}
+	aside button{
+	margin: 0;
+	margin-left: -2px;/*让button的边框和input的边框重合*/
+	padding: 0;
+	width: 35px;
+	height:34px ;	
+	background-color: #ccc;
+	position:absolute;
+	background-size: 101% 101%;	
+	border: 0px;
+	}
+	aside div ul{
+		margin: 0;
+		text-align: left;
+		padding: 0;
+	}
+	aside div ul li{
+		margin: 0;
+		list-style: none;
+		text-align: left;
+		line-height: 50px;
+		border-bottom: solid 1px #ccc;
+	}
+	aside div ul li img{
+		width: 20px;
+		height: 20px;
+	}
+	/*footer begin*/
+	footer{
+		width: 100%;
+		background-color: #222;
+		height: 50px;
+		color: #fff;
+		padding: 3%;
+	}
+
+}

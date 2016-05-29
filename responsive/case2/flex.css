@@ -1,0 +1,19 @@
+#out{
+	display: flex;
+	flex-direction: column;
+
+}
+#container{
+	display: flex;
+	
+	flex-grow: 1;
+}
+main{
+	
+	flex-grow: 2;
+	background-color: #ccc;
+}
+aside{
+	flex-grow: 1;
+	background-color: pink;
+}
