@@ -68,19 +68,21 @@
 	main{
 		
 		padding: 2%;
-		flex-grow: 1;
+		flex-grow: 2;
+		flex-shrink: 2;
 		
 	}
 	main div{
-		width: 90%;
-		padding: 2%;
+		margin: 0;
+		width: 100%;
+		
 		column-count: 2;
 		
 	}
 	main div section{
 		margin:0;
 		margin-bottom: 5%;
-		width: 100%;
+		width: 90%;
 		padding: 1%;
 		text-align: left;
 	}
@@ -105,10 +107,12 @@
 	}
 	/*aside begin*/
 	aside{
-		width: 300px
+		
 		background-color: #eee;
 		padding: 1%;
-		flex-shrink: 0;
+		
+		flex-grow: 1;
+		flex-shrink: 1;
 	}
 	aside div{
 		padding: 12%;
