@@ -32,30 +32,6 @@
 
 	}
 
-	nav{
-		margin: 0 5%;
-		padding: 0;
-		font-weight: bold;
-	}
-	nav a{
-		text-decoration: none;
-		color: #fff;
-	}
-	nav ul{
-		margin: 0;
-		padding: 0;
-		background-color: #368abf;
-	}
-	nav ul li{
-		display: inline-block;
-		list-style: none;
-		margin-bottom: 1px;
-		padding: 2%;
-		text-align: center;
-		line-height: 1em;
-		border-right:solid 1px #3282b3;
-		border-left:solid 1px #4095c9; 
-	}
 
 	/*** main begin ***/
 	#container{
@@ -112,58 +88,7 @@
 		margin:0;
 	}
 	/*aside begin*/
-	aside{
-		width: 300px;
-		background-color: #eee;
-		padding: 1%;
-		
-		flex-shrink: 0;/*空间不足时不收缩*/
-	}
-	aside div{
-		padding: 12%;
-	}
-	aside div p{
-		border-bottom: solid 3px #0f84cc;
-		display: inline-block;
-	}
 
-	aside div form{
-		display: inline-block;
-	}
-	#search{
-	margin: 0;
-	width: 10em;
-	height: 30px;
-	border:#ccc solid 1px;
-	border-right: black solid 1px;
-	}
-	aside button{
-	margin: 0;
-	margin-left: -2px;/*让button的边框和input的边框重合*/
-	padding: 0;
-	width: 35px;
-	height:34px ;	
-	background-color: #ccc;
-	position:absolute;
-	background-size: 101% 101%;	
-	border: 0px;
-	}
-	aside div ul{
-		margin: 0;
-		text-align: left;
-		padding: 0;
-	}
-	aside div ul li{
-		margin: 0;
-		list-style: none;
-		text-align: left;
-		line-height: 50px;
-		border-bottom: solid 1px #ccc;
-	}
-	aside div ul li img{
-		width: 20px;
-		height: 20px;
-	}
 	/*footer begin*/
 	footer{
 		width: 100%;
@@ -173,20 +98,6 @@
 		padding: 0;
 		position: relative;
 	}
-	
-	#goTop img{
-		width: 100%;
-		background-size: cover;
-	}
-
-}
-@media (min-width: 960px){
-	#navIcon{
-		display: none;
-	}
-	#nav-collapse{
-		display: none;
-	}
 	#goTop{
 		width: 80px;
 		height: 80px;
@@ -195,6 +106,73 @@
 		position: absolute;
 		bottom: 60px;
 		right:20px;
+
+	}
+	#goTop img{
+		width: 100%;
+		background-size: cover;
+	}
+
+}
+
+@media (max-width: 960px){
+	aside{
+		display: none;
+		
+	}
+	header{
+		height:120px;
+		position: relative;
+	}
+	nav{
+		display: none;
+	}
+	#navIcon{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top:60px;
+		right:50px;
+		background-color: #368abf;
+		border-radius: 25px;
+
+	}
+	#navIcon img{
+		width: 100%;
+		background-size: cover;
+	}
+	#nav-collapse{
+		display: none;
+
+	}
+	#nav-collapse a{
+		text-decoration: none;
+		color: #fff;
+
+	}
+
+	#nav-collapse ul{
+		margin:0;
+		padding: 0;
+		background-color: #368abf;
+	}
+	#nav-collapse ul li{
+		margin: 0;
+		padding: 2%;
+		text-align:right;
+		line-height: 10px;
+		border-bottom: solid 1px #4095c9;
+		color: #0f84cc;
+
+	}
+	#goTop{
+		width: 30px;
+		height: 30px;
+		border-radius: 40px;
+		background-color: #368abf;
+		position: absolute;
+		bottom: 35px;
+		right:10px;
 
 	}
 }
