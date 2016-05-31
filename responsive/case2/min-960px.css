@@ -55,6 +55,25 @@
 		line-height: 1em;
 		border-right:solid 1px #3282b3;
 		border-left:solid 1px #4095c9; 
+		position: relative;
+	}
+	nav ul li ul{
+		position: absolute;
+		top:50px;
+		left:-25px;
+		background-color: lighten(#368abf);
+		display: none;
+	}
+	nav ul li ul li{
+		display: block;
+		float: none;
+		width: 200px;
+		line-height: 3em;
+		border-right: 0;
+		border-left: 0;
+		border-bottom:solid 1px #4095c9;
+		margin: 0;
+		padding: 0;
 	}
 
 	/*** main begin ***/
@@ -86,7 +105,9 @@
 		width: 90%;
 		padding: 1%;
 		text-align: left;
+		overflow-x: hidden;
 	}
+	
 	main img{
 		width: 100%;
 	}

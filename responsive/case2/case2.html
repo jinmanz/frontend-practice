@@ -15,8 +15,8 @@
 		<h1>ROWLING</h1>
 		<h6>Rowling is a clean, simple and elegant magazine theme.</h6>
 		<nav>
-			<ul>
-				<li><a href="#">HOME</a></li><li><a href="#">PHOTOS</a></li><li><a href="#">PAINTINGS</a></li><li><a href="#">PARENT PAGE</a></li><li><a href="#">WRITING</a></li><li><a href="#">ABOUT</a></li>
+			<ul id="list">
+				<li><a href="#">HOME</a></li><li><a href="#">PHOTOS</a></li><li><a href="#">PAINTINGS</a></li><li><a href="#">PARENT PAGE</a><ul class="child-page"><li>Child1</li><li>Child2</li></ul></li><li><a href="#">WRITING</a><ul><li>Blog</li><li>Article</li></ul></li><li><a href="#">ABOUT</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -25,8 +25,18 @@
 			<li><a href="#">HOME</a></li>
 			<li><a href="#">PHOTOS</a></li>
 			<li><a href="#">PAINTINGS</a></li>
-			<li><a href="#">PARENT PAGE</a></li>
-			<li><a href="#">WRITING</a></li>
+			<li><a href="#">PARENT PAGE</a>
+				<ul style="display:none">
+				<li>Child1</li>
+				<li>Child2</li>
+				</ul>
+			</li>
+			<li><a href="#">WRITING</a>
+				<ul style="display:none">
+				<li>Blog</li>
+				<li>Article</li>
+				</ul>
+			</li>
 			<li><a href="#">ABOUT</a></li>
 		</ul>
 	</div>
@@ -35,6 +45,7 @@
 		<div id="mainDiv">
 			<section>
 				<img src="images/1.png">
+				<input style="display:none" id="index" value="1">
 				<h6>Acticle 1</h6>
 				<h1>World News</h1>
 				<p>July 7,2016</p>

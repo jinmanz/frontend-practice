@@ -127,6 +127,8 @@
 	nav{
 		display: none;
 	}
+
+
 	#navIcon{
 		width: 50px;
 		height: 50px;
@@ -158,13 +160,37 @@
 	}
 	#nav-collapse ul li{
 		margin: 0;
-		padding: 2%;
+		padding: 0 2% 0 0;
+		line-height: 3em;
 		text-align:right;
-		line-height: 10px;
+		
 		border-bottom: solid 1px #4095c9;
 		color: #0f84cc;
 
 	}
+
+	#nav-collapse ul li ul{
+		margin: 0;
+		padding: 0;
+		background-color: lighten(#368abf);
+		display: none;
+	}
+	#nav-collapse ul li ul li{
+		margin: 0;
+		padding: 0;
+		display: block;
+		float: none;
+		width: 100%;
+		line-height: 3em;
+		border-right: 0;
+		border-left: 0;
+		
+		border-top:solid 1px #4095c9;
+		margin: 0;
+		padding: 0;
+		color: #ccc;
+	}
+
 	#goTop{
 		width: 30px;
 		height: 30px;

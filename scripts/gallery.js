@@ -35,7 +35,7 @@ function changePic(){
     var div = document.getElementById("bigpic");
     var index = document. getElementById("imgIndex").value;
     div.style.backgroundImage="url("+pics[index]+")";
-    alert(div.style.backgroundImage);
+    
 
 
     
