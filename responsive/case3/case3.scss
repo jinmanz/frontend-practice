@@ -55,6 +55,7 @@ $font-back:#fff;
 	main{
 		columns:2;
 		column-gap:0;
+		background-color:$back-color;
 
 		div{
 			$div-padding:4em;
@@ -63,9 +64,11 @@ $font-back:#fff;
 			padding:4em 2em;
 			position: relative;
 			
+			
 			div{
 			
 				background-color:$font-back;
+
 			}
 			img{
 				position:absolute;
@@ -76,6 +79,12 @@ $font-back:#fff;
 				z-index: 1000;
 				transform:rotate(8deg);
 				box-shadow: 10px 10px 5px #888888;
+				transition:width 0.5s, height 0.5s, transform 0.5s;
+				&:hover{
+					transform:rotate(0deg);
+					width: 15em;
+					height: 10em;
+				}
 			}
 		}
 	}
@@ -91,7 +100,26 @@ $font-back:#fff;
 	.lighten12{
 		background-color:lighten($back-color,12%);
 	}
-	footer{}
+	.lighten3,.lighten6,.lighten9,.lighten12{
+		&:hover{
+			background-color:$back-color;
+		}
+	}
+
+
+	footer{
+		height: 100px;
+		background-color:$back-color;
+		text-align: center;
+		padding-top:2em;
+		span img{
+			width: 50px;
+			height: 50px;
+			&:hover{
+				opacity:0.5;
+			}
+		}
+	}
 }
 
 @media (max-width: 640px){
