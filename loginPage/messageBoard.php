@@ -48,18 +48,19 @@
 				</div>
 				<div>
 					<p>message:</p>
-					<textarea rows="3" cols="20"></textarea>
+					<textarea rows="3" cols="20" name="message"></textarea>
 				</div>
-				<input type="submit" name="message" value="submit">
+				<input type="submit" name="submit" value="submit">
 			</form>
 		</div>
 		<?php
-echo "<h2>您的输入：</h2>";
-echo $username;
-echo "<br>";
-echo $message;
+			echo '<h2>username:</h2>';
+			echo $username;
+			echo '<br>';
+			echo 'Your message:';
+			echo $message;
 
-?>
+		?>
 	</main>
 
 
